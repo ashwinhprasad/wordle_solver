@@ -1,0 +1,47 @@
+1) Get a list of all words in english
+
+2) Filter the list to get words of length 5
+
+3) Assign each word a score (Based on the number of unique letters in the word) [This is initially stored in the form of a dictionary, with words being the key and scores being the values]
+
+Example: 
+    score("batman") = 5
+    score("driver") = 5
+    score("sheep") = 4
+
+4) Convert the data from the dictionary to a nested list again
+
+dict = {
+    "batman":5,
+    "driver":5,
+    "sheep":4
+}
+
+nes_list = [
+    ("batman",5),
+    ("driver",5),
+    ("sheep",4)
+]
+
+5) sort the list based on the score of the item in descending order (the nes_list is already sorted)
+
+6) With this the preprocessing step is over, and we can move on to making guesses
+
+
+7) The machine will give the top-most word as it's guess i.e "batman"
+
+8) we provide a feedback to the machine which indicates the presence and absence of certain letters from it's guess.
+
++  - letter present at the exact location
+
+. - letter not present in the word
+
+* - letter present in the word
+
+
+9) The machine will use that feedback to filter in only those words that match the criteria
+
+10) step 7, 8 and 9 repeats
+
+
+
